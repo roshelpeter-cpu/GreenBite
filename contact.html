@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite/Contact</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico"image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+     <main class="contact-page">
+         <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2>We’d Love to Hear From You</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="formMsg" class="success-msg"></p>
+      </form>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+      <h2>Find Us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.26285936076!2d79.81265194999999!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259594b12a4c7%3A0x7d1c8bbf5a71f2db!2sColombo!5e0!3m2!1sen!2slk!4v1694597491704!5m2!1sen!2slk"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <button class="faq-question">What is GreenBite all about?</button>
+        <div class="faq-answer"><p>GreenBite promotes healthy living with recipes, workouts, and wellness tips tailored for everyone.</p></div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Do I need an account to save recipes?</button>
+        <div class="faq-answer"><p>No, you can save recipes directly using localStorage without creating an account.</p></div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Can I access GreenBite on my phone?</button>
+        <div class="faq-answer"><p>Yes! GreenBite is fully responsive and also works as a PWA, so you can install it like an app.</p></div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Where is GreenBite HQ located?</button>
+        <div class="faq-answer"><p>Our headquarters are in Colombo, Sri Lanka.</p></div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">How can I give feedback?</button>
+        <div class="faq-answer"><p>You can use the contact form above — your feedback will be saved and we’ll respond soon!</p></div>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+            </div>
+
+            <!-- About Us -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>GreenBite is dedicated to providing healthy recipes, workouts, and mindfulness tips for a balanced
+                    lifestyle.</p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <input type="email" id="newsletterEmail" placeholder="Enter your email">
+                <button id="subscribeBtn">Subscribe</button>
+                <p id="subscribeMessage"></p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+                <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">© 2025 GreenBite. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

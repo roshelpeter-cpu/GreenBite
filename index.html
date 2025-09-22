@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite/Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico"image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+        </div>
+
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1 id="heroQuote">Welcome to GreenBite!</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="daily-tips">
+            <div class="tip-card">
+                <h2>Health Tip of the Day</h2>
+                <p id="healthTip"></p>
+            </div>
+            <div class="tip-card">
+                <h2>Word of the Day</h2>
+                <p id="wordOfTheDay"></p>
+            </div>
+            <div class="tip-card">
+                <h2>Productivity Tip</h2>
+                <p id="productivityTip"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+            </div>
+
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>GreenBite is dedicated to providing healthy recipes, workouts, and mindfulness tips for a balanced lifestyle.</p>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <input type="email" id="newsletterEmail" placeholder="Enter your email">
+                <button id="subscribeBtn">Subscribe</button>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <p class="footer-copy">© 2025 GreenBite. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

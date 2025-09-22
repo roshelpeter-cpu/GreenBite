@@ -1,0 +1,212 @@
+/* workout.css */
+
+/* Main Section */
+.workout-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #f0fcf8, #d1f2eb);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Header */
+.workout-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #27ae60;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Form */
+.workout-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-form label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 0.5rem;
+}
+
+.workout-form select {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #27ae60;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.workout-form select:focus {
+    border-color: #2ecc71;
+    outline: none;
+    box-shadow: 0 0 8px rgba(46,204,113,0.3);
+}
+
+.workout-form .btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.workout-form .btn:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Workout Results */
+.workout-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.workout-results h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Exercises List */
+.exercises-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.exercise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.exercise:hover {
+    transform: translateY(-3px);
+    background-color: #e8f8f5;
+}
+
+.exercise-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+/* Timer Container */
+.exercise-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+    min-width: 100px;
+}
+
+.exercise-timer {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+/* Countdown Bar */
+.countdown-bar {
+    width: 120px;
+    height: 10px;
+    background-color: #bdc3c7;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    border-radius: 5px;
+    transition: width 1s linear;
+}
+
+/* Workout Controls */
+.workout-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.workout-controls .btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.workout-controls .btn:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Highlight Current Exercise */
+.exercise.current {
+    border: 2px solid #27ae60;
+    box-shadow: 0 8px 20px rgba(39,174,96,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .exercise {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .exercise-timer-container {
+        align-items: flex-start;
+    }
+
+    .workout-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .workout-form select, .workout-form .btn {
+        width: 100%;
+    }
+
+    .countdown-bar {
+        width: 100%;
+    }
+}

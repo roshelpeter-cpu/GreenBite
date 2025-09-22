@@ -1,0 +1,68 @@
+.hero {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* DAILY TIPS SECTION */
+.daily-tips {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #F5F5F5;
+  flex-wrap: wrap;
+}
+
+.tip-card {
+  background: #FFFFFF;
+  border: 2px solid #AED581;
+  color: #212121;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 105, 92, 0.3);
+}
+
+.tip-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #00695C;
+}
+
+.tip-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212121;
+}

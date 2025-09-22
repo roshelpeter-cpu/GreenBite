@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite/Mindfulness</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mindfulness.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico"image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="mindfulness-page">
+        <!-- Breathing Section -->
+        <section class="breathing-section card">
+            <h2>Guided Breathing</h2>
+            <div id="breathCircle" class="breath-circle">
+                <span id="breathTimer" class="breath-timer">00:00</span>
+                <span id="breathLabel" class="breath-label">Ready</span>
+            </div>
+            <div class="breath-controls">
+                <label for="cycleLength">Cycle length (sec)</label>
+                <select id="cycleLength">
+                    <option value="4">4</option>
+                    <option value="6" selected>6</option>
+                    <option value="8">8</option>
+                </select>
+
+                <div class="breath-buttons">
+                    <button id="startBreath">Start</button>
+                    <button id="pauseBreath">Pause</button>
+                    <button id="stopBreath">Stop</button>
+                </div>
+
+            </div>
+            
+
+
+        </section>
+        <div class="lower-sections">
+            <!-- Timer Section -->
+            <section class="timer-section card">
+                <h2>Meditation Timer</h2>
+
+                <div class="timer-controls">
+                    <div class="preset-buttons">
+                        <button class="preset" data-min="5">5 min</button>
+                        <button class="preset" data-min="10">10 min</button>
+                        <button class="preset" data-min="15">15 min</button>
+                        <button class="preset" data-min="25">25 min</button>
+                    </div>
+
+                    <div class="timer-display" aria-live="polite" id="timer-display">
+                        <span id="minutes">05</span>:<span id="seconds">00</span>
+                    </div>
+
+                    <div class="timer-buttons">
+                        <button id="startTimer">Start</button>
+                        <button id="pauseTimer">Pause</button>
+                        <button id="resetTimer">Reset</button>
+                    </div>
+
+                    <div class="session-type">
+                        <label>Type:</label>
+                        <select id="sessionType">
+                            <option value="meditation">Meditation</option>
+                            <option value="pomodoro">Pomodoro (work)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="session-stats">
+                    <h3>Completed Sessions</h3>
+                    <p>Total completed: <span id="totalCompleted">0</span></p>
+                    <ul id="sessionList" class="session-list"></ul>
+                </div>
+                <div class="session-buttons">
+                    <button id="completeSession">Complete Session</button>
+                    <button id="clearSessions">Clear Sessions</button>
+                </div>
+            </section>
+
+            <!-- Ambient Sounds -->
+            <section class="sound-section card">
+                <h2>Ambient Sounds</h2>
+                <p>Toggle ambient tracks to play while meditating.</p>
+
+                <div class="sound-controls">
+                    <div class="sound-card" style="background-image: url('assets/images/rain.jpg');">
+                        <p>Rain</p>
+                        <button class="sound-toggle" data-sound="rain">Play</button>
+                    </div>
+
+                    <div class="sound-card" style="background-image: url('assets/images/waves.jpg');">
+                        <p>Waves</p>
+                        <button class="sound-toggle" data-sound="waves">Play</button>
+                    </div>
+
+                    <div class="sound-card" style="background-image: url('assets/images/forest.jpg');">
+                        <p>Forest</p>
+                        <button class="sound-toggle" data-sound="forest">Play</button>
+                    </div>
+
+                    <div class="sound-card" style="background-image: url('assets/images/fireplace.jpg');">
+                        <p>Fireplace</p>
+                        <button class="sound-toggle" data-sound="fireplace">Play</button>
+                    </div>
+
+
+                </div>
+
+                <!-- Audio elements -->
+                <audio id="audio-rain" loop preload="auto" src="assets/sounds/rain.mp3"></audio>
+                <audio id="audio-waves" loop preload="auto" src="assets/sounds/waves.mp3"></audio>
+                <audio id="audio-forest" loop preload="auto" src="assets/sounds/forest.mp3"></audio>
+                <audio id="audio-fireplace" loop preload="auto" src="assets/sounds/fireplace.mp3"></audio>
+            </section>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="assets/icons/logo5.png" alt="GreenBite Logo">
+            </div>
+
+            <!-- About Us -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>GreenBite is dedicated to providing healthy recipes, workouts, and mindfulness tips for a balanced
+                    lifestyle.</p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <input type="email" id="newsletterEmail" placeholder="Enter your email">
+                <button id="subscribeBtn">Subscribe</button>
+                <p id="subscribeMessage"></p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+                <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">© 2025 GreenBite. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="js/scripts.js"></script>
+    <script src="js/mindfulness.js"></script>
+</body>
+
+</html>
